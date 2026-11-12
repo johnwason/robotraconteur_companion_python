@@ -307,7 +307,7 @@ class DeviceConnector:
         :rtype: (bool, RobotRaconteur.ServiceSubscription)
         """
         try:
-            return True, self.get_device(device_nickname)
+            return True, self.GetDevice(device_nickname)
         except:
             return False, None
 
